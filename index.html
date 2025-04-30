@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Speech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #222;
+            color: #fff;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+        }
+        
+        textarea {
+            width: 80%;
+            height: 150px;
+            border: none;
+            border-radius: 15px;
+            padding: 15px;
+            font-size: 20px;
+            background: #333;
+            color: #fff;
+        }
+        
+        button {
+            background: #1abc9c;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 25px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3;
+        }
+        
+        button:hover {
+            background: #16a085;
+            transform: scale(1.05);
+        }
+        
+        @media(max-width: 1200px) {
+            textarea {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>text to speak</h1>
+            <textarea id="textInput" palceholder=" enter your text " rows="10" cols="30"></textarea>
+            <br>
+            <button onclick="SpeakText()" id="speak">Play</button>
+            <p id="play"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
